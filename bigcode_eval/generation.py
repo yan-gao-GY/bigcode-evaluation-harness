@@ -62,7 +62,7 @@ def parallel_generations(
                 )
         return generations[:n_tasks]
 
-    set_seed(args.seed, device_specific=True)
+    set_seed(args.seed, device_specific=False)
 
     # Setup generation settings
     gen_kwargs = {
